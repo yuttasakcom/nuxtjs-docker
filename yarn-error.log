@@ -1,0 +1,63 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js p2-delete
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/bin:/home/yo/go/bin:/bin:/home/yo/go/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.10.1
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "nuxt-docker",
+    "version": "1.0.0",
+    "description": "My classy Nuxt.js project",
+    "author": "Yuttasak Pannawat",
+    "private": true,
+    "config": {
+      "nuxt": {
+        "host": "0.0.0.0",
+        "port": "8080"
+      }
+    },
+    "scripts": {
+      "dev": "nuxt",
+      "build": "nuxt build",
+      "start": "nuxt start",
+      "generate": "nuxt generate",
+      "pm2": "pm2 start npm --name nuxt -i max -- start",
+      "pm2-stop": "pm2 stop nuxt",
+      "pm2-delete": "pm2 delete nuxt"
+    },
+    "dependencies": {
+      "nuxt": "^1.0.0"
+    },
+    "devDependencies": {
+      "cross-env": "^5.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command "p2-delete" not found. Did you mean "pm2-delete"?
+      at new MessageError (/usr/share/yarn/lib/cli.js:186:110)
+      at /usr/share/yarn/lib/cli.js:87307:17
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:98:30)
+      at /usr/share/yarn/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/usr/share/yarn/lib/cli.js:23451:28)
+      at /usr/share/yarn/lib/cli.js:95:12
+      at runCommand (/usr/share/yarn/lib/cli.js:87312:22)
+      at Object.<anonymous> (/usr/share/yarn/lib/cli.js:87412:14)

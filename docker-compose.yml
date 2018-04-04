@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+
+  nuxt:
+    build: .
+    container_name: nuxt
+    ports:
+      - "8080:8080"
+    restart: always
